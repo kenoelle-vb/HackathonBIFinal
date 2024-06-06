@@ -176,7 +176,6 @@ import pandas as pd
 import numpy as np
 from datetime import date, timedelta
 from datetime import datetime
-import pandas_datareader as web
 import streamlit as st
 
 st.header(f'Performa perusahaan-perusahaan dalam sektor {spesquery} selama 3 bulan terakhir', divider='rainbow')
