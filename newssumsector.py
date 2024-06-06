@@ -12,9 +12,10 @@ from groq import Groq
 nltk.download('punkt')
 #from google.colab import userdata
 
-query = st.selectbox(
-    "Pilih sektor untuk berita",
-    ("Manufaktur", "Agrikultur", "Pertambangan", "Keuangan", "E-commerce"))
+with st.sidebar:
+    query = st.selectbox(
+        "Pilih sektor untuk berita",
+        ("Manufaktur", "Agrikultur", "Pertambangan", "Keuangan", "E-commerce"))
 
 news1 = 1
 news2 = 2
@@ -178,11 +179,12 @@ from datetime import date, timedelta
 from datetime import datetime
 import streamlit as st
 
-st.header(f'Performa perusahaan-perusahaan dalam sektor {spesquery} selama 3 bulan terakhir', divider='rainbow')
+st.header(f'Performa perusahaan-perusahaan dalam sektor {query} selama 3 bulan terakhir', divider='rainbow')
 
-specific_query = st.selectbox(
-    "Sektor mana bisnis anda?",
-    ("Manufaktur", "Agrikultur", "Pertambangan", "Keuangan", "E-commerce"))
+with st.sidebar:
+    specific_query = st.selectbox(
+        "Sektor mana bisnis anda?",
+        ("Manufaktur", "Agrikultur", "Pertambangan", "Keuangan", "E-commerce"))
 
 today = date.today()
 
