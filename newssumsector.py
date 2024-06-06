@@ -188,7 +188,7 @@ with st.sidebar:
 
 today = date.today()
 
-d1 = date.today() - timedelta(days=90) # timespan of last 5 years
+d1 = date.today() - timedelta(days=360*1) # timespan of last 5 years
 start_date = d1.strftime("%Y-%m-%d")
 end_date = today.strftime("%Y-%m-%d")
 
