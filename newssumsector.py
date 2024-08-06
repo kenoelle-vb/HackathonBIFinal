@@ -146,7 +146,7 @@ summary5 = article5.text
 
 all_summary = summary1 + "\n" + "\n" + summary2 + "\n" + "\n" + summary3 + "\n" + "\n" + summary4 + "\n" + "\n" + summary5
 
-client = Groq(api_key="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")
+client = Groq(api_key="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")
 
 # What the article is about
 summary_bullet_point_whatarticleabout = f"Explain what the news in {all_summary} is about, using 5 bullet points of each news, and only answer in Indonesian, do not mention the news source"
